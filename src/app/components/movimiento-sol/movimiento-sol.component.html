@@ -1,0 +1,59 @@
+<div class="center">
+  <img id="solsito" src="../../../assets/10.png" alt="xd">
+</div>
+
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <i id="iconos" class="material-icons">schedule</i>
+    <mat-card-title>Datos Generales</mat-card-title>
+  </mat-card-header>
+  <img mat-card-image
+    src="https://lh3.googleusercontent.com/oQv8zCUeXZiPBWFKY_-IKZT5KYSkLPFC7QCHGBJMGe-SzW8OK0zQ_oV-OqW-r8avupc"
+    alt="Photo of a Shiba Inu">
+
+  <mat-card-content>
+    <h3>
+      Fecha: {{titulo | date:'fullDate'}}<br />
+      Hora : {{titulo | date:'shortTime'}}
+    </h3>
+  </mat-card-content>
+
+</mat-card>
+
+<mat-card id="card2" class="example-card">
+  <mat-card-header>
+    <i id="iconos" class="material-icons">light_mode</i>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Posición del Sol</mat-card-title>
+
+  </mat-card-header>
+  <img mat-card-image src="https://okdiario.com/img/2018/03/14/distancia-tierra-sol.jpg" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <p>
+      La posición del Sol, según el dia y fecha es: {{value}}
+
+    </p>
+  </mat-card-content>
+
+</mat-card>
+
+
+<div *ngIf="data">
+  <mat-card id="card4" class="example-card">
+    <mat-card-header>
+      <i id="iconos" class="material-icons">light_mode</i>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Datos del seguidor solar</mat-card-title>
+
+    </mat-card-header>
+    <img mat-card-image src="https://okdiario.com/img/2018/03/14/distancia-tierra-sol.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <h3>
+        Altitud: {{data.servos.gradosServoVertical }} <br />
+        Azimut : {{data.servos.gradosServoHorizontal }}
+      </h3>
+    </mat-card-content>
+
+  </mat-card>
+</div>

@@ -1,0 +1,73 @@
+.body {
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+img#coche1 {
+  position: absolute;
+}
+
+img#coche2 {
+  position: absolute;
+  margin-top: 10px;
+}
+
+.zona_boton {
+  text-align: center;
+  width: 100%;
+  margin-top: 240px;
+}
+
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  
+  background-size: cover;
+}
+
+#card2 {
+  position: absolute;
+  left: 500px;
+  top: 370px;
+  max-width: 400px;
+}
+#card3 {
+  position: absolute;
+  left: 1000px;
+  top: 380px;
+}
+
+#iconos {
+  color: #2196F3;
+}
+
+ #solsito{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  animation-duration: 2s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.slidein {
+  animation-duration: 2s;
+  animation-name: slidein;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    margin-left:50%;
+    width:30%
+  }
+
+  to {
+   margin-left:0%;
+   width:10%;
+ }
+}
